@@ -12,3 +12,4 @@ struct person  {
     var country = ""
     var imagename = ""
 }
+
