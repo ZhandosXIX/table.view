@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,11 +35,18 @@
                                 <rect key="frame" x="16" y="151" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cF8-IB-E5s">
+                                <rect key="frame" x="174" y="490" width="44" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="go"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="GoLocation" destination="cF8-IB-E5s" id="mdk-5o-9In"/>
                         <outlet property="imageview" destination="vHN-bJ-rua" id="NX0-d9-suq"/>
                         <outlet property="labelCountry" destination="XcI-8f-PL6" id="qPO-jD-f0u"/>
                         <outlet property="labelName" destination="FXo-hB-DIC" id="gOY-y0-tOQ"/>
@@ -47,6 +55,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2770.2290076335876" y="28.87323943661972"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Qkz-Gn-oDI">
+            <objects>
+                <viewController storyboardIdentifier="mapVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sJ5-XR-QPA" customClass="MapViewController" customModule="table" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BEE-4S-Mtw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLv-AV-KPU">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rma-pV-Nfk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rma-pV-Nfk" firstAttribute="trailing" secondItem="LLv-AV-KPU" secondAttribute="trailing" id="MKC-Zb-iar"/>
+                            <constraint firstItem="LLv-AV-KPU" firstAttribute="top" secondItem="rma-pV-Nfk" secondAttribute="top" id="Str-Jn-f0v"/>
+                            <constraint firstItem="rma-pV-Nfk" firstAttribute="bottom" secondItem="LLv-AV-KPU" secondAttribute="bottom" id="UYI-L5-W9s"/>
+                            <constraint firstItem="LLv-AV-KPU" firstAttribute="leading" secondItem="rma-pV-Nfk" secondAttribute="leading" id="abg-Pp-yNh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UYK-PV-GiL"/>
+                    <connections>
+                        <outlet property="mapView" destination="LLv-AV-KPU" id="KtF-8G-FED"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mep-Oz-aDL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4544.2748091603053" y="36.619718309859159"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="det-gc-O06">

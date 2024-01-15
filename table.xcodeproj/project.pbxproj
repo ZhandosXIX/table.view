@@ -18,6 +18,7 @@
 		D7A00C102AD29EEC00C04C15 /* tableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A00C0F2AD29EEC00C04C15 /* tableUITests.swift */; };
 		D7A00C122AD29EEC00C04C15 /* tableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A00C112AD29EEC00C04C15 /* tableUITestsLaunchTests.swift */; };
 		D7A00C1F2AD29F1B00C04C15 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A00C1E2AD29F1B00C04C15 /* TableViewController.swift */; };
+		D7DE1B122B5406FB00D941D7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DE1B112B5406FB00D941D7 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D7A00C0F2AD29EEC00C04C15 /* tableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableUITests.swift; sourceTree = "<group>"; };
 		D7A00C112AD29EEC00C04C15 /* tableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D7A00C1E2AD29F1B00C04C15 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D7DE1B112B5406FB00D941D7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D7A00BEE2AD29EEB00C04C15 /* AppDelegate.swift */,
 				D7A00BF02AD29EEB00C04C15 /* SceneDelegate.swift */,
 				D7A00BF22AD29EEB00C04C15 /* ViewController.swift */,
+				D7DE1B112B5406FB00D941D7 /* MapViewController.swift */,
 				D770DA042AD6D4AC009754B7 /* person.swift */,
 				D7A00BF42AD29EEB00C04C15 /* Main.storyboard */,
 				D7A00BF72AD29EEB00C04C15 /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7A00BF32AD29EEB00C04C15 /* ViewController.swift in Sources */,
+				D7DE1B122B5406FB00D941D7 /* MapViewController.swift in Sources */,
 				D770DA052AD6D4AC009754B7 /* person.swift in Sources */,
 				D7A00BEF2AD29EEB00C04C15 /* AppDelegate.swift in Sources */,
 				D7A00BF12AD29EEB00C04C15 /* SceneDelegate.swift in Sources */,
@@ -447,6 +451,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = table/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "we need your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -474,6 +479,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = table/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "we need your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
